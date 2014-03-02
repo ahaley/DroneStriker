@@ -1,6 +1,9 @@
 DRONE STRIKER
 
-===============
+============
+
+Event 1 of the Code Wars
+============
 
 You are tasked with designing the software architecture that will power
 the DRONE STRIKER, a defensive network of kinetic energy velocity penetrator 
@@ -21,5 +24,4 @@ meters, 1 meter = 1 pixel). Taking into account the wind vector draw a
 crosshairs on the location of the battlefield image where the HV round will
 need to be fired to hit each target. If the hit is offscreen of the engagement
 screen record to stdout a miss.
-
 
