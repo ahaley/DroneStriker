@@ -26,15 +26,10 @@ int main(int argc, char* argv[])
 	double orientation = atof(argv[2]);
 	int magnitude = atoi(argv[3]);
 
-	// There is a bug with win32 and opencv2's imread preventing us from
-	// reading the image directory into the Mat.
-	IplImage* imageRead = cvLoadImage(argv[1], 1);
-	Mat image(imageRead);
+	Mat image = imread(argv[1], 1);
 
 	if (image.data == NULL) {
 		printf("Could not load image file.\n");
-		printf("cwd = %s\n", _getcwd(NULL, 0));
-		printf("f = %s\n", argv[1]);
 		return - 1;
 	}
 
