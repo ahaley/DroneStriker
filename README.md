@@ -27,3 +27,9 @@ meters per second). Taking into account the wind vector paint the target on the
 location of the battlefield image where the HV round will need to be fired to
 hit each target.
 
+Note: the wind orientation is textbook, meaning that it runs counter-clockwise
+from the right side of the unit circle when referencing the engagement plane. 
+Keep that in mind when dealing with the origin starting at the top left of the 
+image that is the norm for computer graphics.
+
+
