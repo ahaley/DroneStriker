@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 	Mat image = imread(argv[1], 1);
 
 	if (image.data == NULL) {
-		printf("Could not load image file.\n");
+		fprintf(stderr, "Could not load image file.\n");
 		return - 1;
 	}
 
