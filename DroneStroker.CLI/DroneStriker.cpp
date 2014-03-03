@@ -23,7 +23,7 @@ DroneStriker::~DroneStriker()
 
 void DroneStriker::Annihilate(Mat image, Mat &result, double orientation, int magnitude)
 {
-	image.copyTo(result);
+	inRange(image, Scalar(0, 0, 0), Scalar(0, 0, 255), result);
 }
 
 void DroneStriker::PaintTarget(cv::Mat &result, int x, int y)
