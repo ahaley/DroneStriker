@@ -12,7 +12,6 @@ extern "C" {
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 
-#include <direct.h>
 using namespace cv;
 
 int main(int argc, char* argv[])

@@ -16,15 +16,6 @@ DroneStriker::DroneStriker()
 void DroneStriker::Annihilate(Mat image, Mat &result, double orientation, int magnitude)
 {
 	image.copyTo(result);
-
-	srand(time(NULL));
-
-	for (int i = 0; i < 1000; i++) {
-		PaintTarget(result,
-			rand() / (double)RAND_MAX * image.size().width,
-			rand() / (double)RAND_MAX * image.size().height);
-	}
-
 }
 
 
