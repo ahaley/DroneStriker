@@ -13,11 +13,18 @@ DroneStriker::DroneStriker()
 	target = new Target();
 };
 
+DroneStriker::~DroneStriker()
+{
+	if (target != NULL) {
+		delete target;
+		target = NULL;
+	}
+}
+
 void DroneStriker::Annihilate(Mat image, Mat &result, double orientation, int magnitude)
 {
 	image.copyTo(result);
 }
-
 
 void DroneStriker::PaintTarget(cv::Mat &result, int x, int y)
 {

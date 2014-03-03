@@ -16,7 +16,7 @@ target. Unfortunately due to a massive design flaw the HV path are subject
 to direct interference from wind. For every meter per second of wind velocity
 tangential to the engagement plane the HV round will travel approximately one
 pixel. (Don't even try to second guess the physics of instantaneous travel and
-the effect of wind against it, you're a computer scientist not a physicist). 
+the effect of wind against it, you're a computer scientist, not a physicist). 
 The DRONE STRIKER will need to adjust targeting according to this contraint.
 
 Implement the DroneStriker::Annihilate method. This method takes in an image
