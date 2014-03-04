@@ -32,7 +32,7 @@ vector<Point2f> DroneStriker::GetCenterMasses(Mat image)
 {
 	Mat blackAndWhite;
 
-	inRange(image, Scalar(0, 0, 0), Scalar(0, 0, 255), blackAndWhite);
+	inRange(image, Scalar(0, 0, 200), Scalar(0, 0, 255), blackAndWhite);
 
 	Mat cannyOutput;
 	const int thresh = 100;
