@@ -1,6 +1,6 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
-#include "Target.h"
+#include "ITarget.h"
 
 class DroneStriker
 {
@@ -13,5 +13,5 @@ private:
 	cv::vector<cv::Point2f> DroneStriker::GetCenterMasses(cv::Mat image);
 	void DroneStriker::AdjustForWind(std::vector<cv::Point2f> &centerMasses, double orientation, int magnitude);
 
-	Target *target;
+	ITarget *target;
 };

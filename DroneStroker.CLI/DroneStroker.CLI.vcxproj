@@ -85,12 +85,15 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CircleTarget.h" />
     <ClInclude Include="DroneStriker.h" />
+    <ClInclude Include="ITarget.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Target.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CircleTarget.cpp" />
     <ClCompile Include="DroneStriker.cpp" />
     <ClCompile Include="DroneStroker.CLI.cpp" />
     <ClCompile Include="stdafx.cpp">

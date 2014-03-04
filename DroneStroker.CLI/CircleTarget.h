@@ -1,10 +1,10 @@
 #include <opencv2/core/core.hpp>
 #include "ITarget.h"
 
-class Target : public ITarget
+class CircleTarget : public ITarget
 {
 public:
-	Target();
+	CircleTarget();
 	void Paint(cv::Mat image, int x, int y);
 private:
 };

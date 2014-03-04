@@ -9,12 +9,15 @@ extern "C" {
 #include <time.h>
 }
 
+#include "Target.h"
+#include "CircleTarget.h"
+
 using namespace std;
 using namespace cv;
 
 DroneStriker::DroneStriker()
 {
-	target = new Target();
+	target = new CircleTarget();
 };
 
 DroneStriker::~DroneStriker()
