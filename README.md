@@ -2,7 +2,7 @@ DRONE STRIKER
 
 ============
 
-Event 1 of the Code Wars
+Event 1 of the CODE WARS
 ============
 
 You are tasked with designing the software architecture that will power
