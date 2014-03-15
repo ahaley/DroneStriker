@@ -4,13 +4,18 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <vector>
 
+#define _USE_MATH_DEFINES
+
 extern "C" {
 #include <stdio.h>
 #include <time.h>
+#include <math.h>
 }
 
 #include "Target.h"
 #include "CircleTarget.h"
+
+
 
 using namespace std;
 using namespace cv;
@@ -65,8 +70,8 @@ vector<Point2f> DroneStriker::GetCenterMasses(Mat image)
 
 void DroneStriker::AdjustForWind(vector<Point2f> &centerMasses, double orientation, int magnitude)
 {
-	int dx = static_cast<int>(cos(orientation) * magnitude);
-	int dy = -static_cast<int>(sin(orientation) * magnitude);
+	int dx = static_cast<int>(cos(orientation + M_PI) * magnitude);
+	int dy = -static_cast<int>(sin(orientation + M_PI) * magnitude);
 
 	for (vector<Point2f>::iterator iter = centerMasses.begin();
 		iter != centerMasses.end();
