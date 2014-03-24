@@ -1,9 +1,6 @@
 // DroneStroker.CLI.cpp : Defines the entry point for the console application.
 //
 
-#if defined _WIN32 || defined _WIN64
-#include "stdafx.h"
-#endif
 #include "DroneStriker.h"
 extern "C" {
 #include <math.h>
