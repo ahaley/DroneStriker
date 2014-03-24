@@ -1,4 +1,4 @@
-#include "stdafx.h"
+
 #include "DroneStriker.h"
 
 #include <opencv2/imgproc/imgproc.hpp>

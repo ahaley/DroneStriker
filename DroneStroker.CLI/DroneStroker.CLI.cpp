@@ -1,7 +1,6 @@
 // DroneStroker.CLI.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
 #include "DroneStriker.h"
 extern "C" {
 #include <math.h>
@@ -29,7 +28,7 @@ int main(int argc, char* argv[])
 
 	if (image.data == NULL) {
 		fprintf(stderr, "Could not load image file.\n");
-		return - 1;
+		return -1;
 	}
 
 	DroneStriker d;
